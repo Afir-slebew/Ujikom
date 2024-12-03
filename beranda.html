@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f4ff;
+  color: #4b0082; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  background: linear-gradient(90deg, #3f42ef, #6c63ff);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.header-text h2 {
+  font-size: 1.2rem;
+  color: #dcdcdc;
+}
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-button {
+  text-decoration: none;
+  color: white;
+  background-color: #3f42ef;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.menu-button:hover {
+  background-color: #3f42ef;
+  transform: scale(1.05);
+}
+footer {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #3f42ef;
+  color: white;
+  font-size: 0.9rem;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <img src="logo smp.png" alt="Logo sekolah" class="header-logo" />
+          <div class="header-text">
+            <h1>Selamat Datang di Sistem Eskul</h1>
+            <h2>SMPN 2 DAYEUHKOLOT</h2>
+          </div>
+        </div>
+      </header>
+  
+  <main>
+    <div class="menu-container">
+      <a href="list_eskul.php" class="menu-button">List Eskul</a>
+      <a href="jadwal.html" class="menu-button">Jadwal Eskul</a>
+      <a href="daftar.html" class="menu-button">Daftar Eskul</a>
+      <a href="logout.php" class="menu-button">Logout</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>UJIKOM - Firdaus Hardiansyah</p>
+  </footer>
+</body>
+</html>

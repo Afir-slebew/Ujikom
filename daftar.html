@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Ekstrakurikuler</title>
+  <style>
+    header {
+      background-color: #3f42ef;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      font-family: Arial, sans-serif;
+    }
+    form label {
+      font-size: 1rem;
+      color: #333;
+      display: block;
+      margin-bottom: 5px;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form textarea {
+      height: 100px;
+      resize: none;
+    }
+    .submit-button {
+      background-color: #3f42ef;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease-in-out;
+    }
+    .submit-button:hover {
+      background-color: #6f72ff;
+    }
+    .back-button {
+      text-decoration: none;
+      color: white;
+      background-color: #3f42ef;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      display: inline-block;
+      margin: 20px auto;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease-in-out;
+      display: block;
+      width: 200px;
+    }
+
+    .back-button:hover {
+      background-color: #6f72ff;
+    }
+    footer {
+      background-color: #3f42ef;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.9rem;
+      box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Formulir Pendaftaran Ekstrakurikuler</h1>
+  </header>
+
+  <main>
+    <form action="proses_pendaftaran.php" method="POST">
+      <label for="namasiswa">Nama Lengkap:</label>
+      <input type="text" id="namasiswa" name="namasiswa" required placeholder="Masukkan Nama Lengkap">
+      <br>
+  
+      <label for="kelas">Kelas:</label>
+      <input type="text" id="kelas" name="kelas" required placeholder="Contoh: 9A">
+      <br>
+  
+      <label for="nomorhp">Nomor HP:</label>
+      <input type="text" id="nomorhp" name="nomorhp" required placeholder="Masukkan Nomor yang aktif">
+      <br>
+  
+      <label for="eskul">Eskul:</label>
+      <input type="text" id="eskul" name="eskul" required placeholder="Pilihan eskul bisa dilihat di List eskul">
+      <br>
+      <a href="list_eskul.php" class="submit-button">list eskul</a>
+      <br></br>
+  
+      <label for="motivasi">Motivasi:</label>
+      <textarea id="motivasi" name="motivasi" required></textarea>
+      <br>
+  
+      <button type="submit">Daftar</button>
+  </form>
+  
+        <a href="beranda.html" class="back-button">Kembali ke Beranda</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sistem Eskul - Semua Hak Dilindungi</p>
+  </footer>
+</body>
+</html>
